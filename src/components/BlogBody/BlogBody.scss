@@ -1,0 +1,15 @@
+@import '../../theme/colors';
+
+.BlogBody {
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+
+  &__content {
+    width: 890px;
+    padding: 0 16px;
+    max-width: 100%;
+    min-height: 100%;
+    margin: auto;
+  }
+}

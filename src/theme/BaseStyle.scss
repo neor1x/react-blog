@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import './colors';
+
+// DOCUMENT SET-UP
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $color-neutralPrimary;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// BASE STYLE FOR COMPONENTS
+
+.Button,
+.Anchor {
+  &--hidden {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:active,
+    &:hover,
+    &:focus,
+    &:visited {
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.Anchor--hidden {
+  cursor: pointer;
+}
